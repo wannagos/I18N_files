@@ -1,0 +1,3 @@
+This repository holds Asian languages only.  For other languages, please visit Transifex project page <https://www.transifex.com/projects/p/openclinica/>.
+
+The reason why we are managing Asian language properties files is because Transifex doesn't seem to handle Asian language well. For example, you won't be able to see human readable characters, and downloaded files will add an unnecessary back slash because it treats file encoding as Latin-1 while it should be UTF-8.
