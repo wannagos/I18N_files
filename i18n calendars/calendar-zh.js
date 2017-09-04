@@ -1,7 +1,7 @@
 // ** I18N
 
-// Calendar JP language
-// Author: Hiroaki Honshuku, <hhonshuku@openclinica.com>
+// Calendar Chinese(Simplified) language
+// Author: mingwei yang
 // Encoding: any
 // Distributed under the same terms as the calendar itself.
 
@@ -11,14 +11,14 @@
 
 // full day names
 Calendar._DN = new Array
-("日曜",
- "月曜",
- "火曜",
- "水曜",
- "木曜",
- "金曜",
- "土曜",
- "日曜");
+("星期七",
+ "星期一",
+ "星期二",
+ "星期三",
+ "星期四",
+ "星期五",
+ "星期六",
+ "星期七");
 
 // Please note that the following array of short day names (and the same goes
 // for short month names, _SMN) isn't absolutely necessary.  We give it here
@@ -34,14 +34,14 @@ Calendar._DN = new Array
 
 // short day names
 Calendar._SDN = new Array
-("日",
- "月",
- "火",
- "水",
- "木",
- "金",
- "土",
- "日");
+("七",
+ "一",
+ "二",
+ "三",
+ "四",
+ "五",
+ "六",
+ "七");
 
 // First day of the week. "0" means display Sunday first, "1" means display
 // Monday first, etc.
@@ -79,12 +79,12 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "カレンダーについて";
+Calendar._TT["INFO"] = "关于";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
-"(c) openclinica.com 2012 / Author: Hiroaki Honshuku\n" + // don't translate this ;-)
-"For latest version visit: http://svn.akazaresearch.com/openclinica-projects/i18n/\n" +
+"(c) openclinica.com 2012 / Author: mingwei yang\n" + // don't translate this ;-)
+"For latest version visit: https://github.com/OpenClinica/I18N_files/blob/master/i18n%20calendars \n" +
 "Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
 "\n\n" +
 "Date selection:\n" +
@@ -97,31 +97,31 @@ Calendar._TT["ABOUT_TIME"] = "\n\n" +
 "- or Shift-click to decrease it\n" +
 "- or click and drag for faster selection.";
 
-Calendar._TT["PREV_YEAR"] = "前年. 年 (クリック・ホールド)";
-Calendar._TT["PREV_MONTH"] = "前月. 月 (クリック・ホールド)";
-Calendar._TT["GO_TODAY"] = "今日";
-Calendar._TT["NEXT_MONTH"] = "次月 月 (クリック・ホールド)";
-Calendar._TT["NEXT_YEAR"] = "次年 年 (クリック・ホールド)";
-Calendar._TT["SEL_DATE"] = "日を選択";
-Calendar._TT["DRAG_TO_MOVE"] = "ドラッグで移動";
-Calendar._TT["PART_TODAY"] = " (今日)";
+Calendar._TT["PREV_YEAR"] = "前一年(长按选择)";
+Calendar._TT["PREV_MONTH"] = "前一月(长按选择)";
+Calendar._TT["GO_TODAY"] = "今天";
+Calendar._TT["NEXT_MONTH"] = "下一月(长按选择)";
+Calendar._TT["NEXT_YEAR"] = "下一年(长按选择)";
+Calendar._TT["SEL_DATE"] = "选择日期";
+Calendar._TT["DRAG_TO_MOVE"] = "按住拖动";
+Calendar._TT["PART_TODAY"] = " (今天)";
 
 // the following is to inform that "%s" is to be the first day of week
 // %s will be replaced with the day name.
-Calendar._TT["DAY_FIRST"] = "最初に %s を表示";
+Calendar._TT["DAY_FIRST"] = "最初 %s 显示";
 
 // This may be locale-dependent.  It specifies the week-end days, as an array
 // of comma-separated numbers.  The numbers are from 0 to 6: 0 means Sunday, 1
 // means Monday, etc.
 Calendar._TT["WEEKEND"] = "0,6";
 
-Calendar._TT["CLOSE"] = "閉じる";
-Calendar._TT["TODAY"] = "今日";
-Calendar._TT["TIME_PART"] = "(シフト-)クリックまたはドラッグで値変更";
+Calendar._TT["CLOSE"] = "关闭";
+Calendar._TT["TODAY"] = "今天";
+Calendar._TT["TIME_PART"] = "（Shift-）单击或拖动以更改值";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d";
 Calendar._TT["TT_DATE_FORMAT"] = "%a, %b %e";
 
-Calendar._TT["WK"] = "週";
-Calendar._TT["TIME"] = "時間:";
+Calendar._TT["WK"] = "周";
+Calendar._TT["TIME"] = "时间:";
